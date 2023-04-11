@@ -10,8 +10,7 @@ def solution(x: np.array) -> bool: # Одна или две выборке на 
     # Не меняйте название функции и её аргументы
     
     y = []
-    
-    for хlst in х:
+    for хlst in x:
         if xlt > 300:
             y.append(300)
         else:
