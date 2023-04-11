@@ -14,7 +14,7 @@ def solution(x: np.array) -> bool: # Одна или две выборке на 
     for хlst in х:
         if xlt > 300:
             y.append(300)
-        else
+        else:
             y.append(xlt)
             
     return ttest_ind(x, y, equal_var=False, alternative="greater").pvalue < 0.04 # Ваш ответ, True или False
