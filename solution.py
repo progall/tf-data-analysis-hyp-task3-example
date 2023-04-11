@@ -16,4 +16,5 @@ def solution(x: np.array) -> bool: # Одна или две выборке на 
         else:
             y.append(хlst)
             
-    return ttest_ind(x, y, equal_var=False, alternative="greater").pvalue < 0.04 # Ваш ответ, True или False
+    #return ttest_ind(x, y, equal_var=False, alternative="greater").pvalue < 0.04 # Ваш ответ, True или False
+    return ks_2samp(x, y, alternative="less").pvalue < 0.04
