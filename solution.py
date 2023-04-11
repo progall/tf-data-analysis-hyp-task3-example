@@ -11,7 +11,7 @@ def solution(x: np.array) -> bool: # Одна или две выборке на 
     
     y = []
     for хlst in x:
-        if xlt > 300:
+        if хlst > 300:
             y.append(300)
         else:
             y.append(xlt)
